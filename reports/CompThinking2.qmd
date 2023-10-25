@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-## Where did birds hatch 
+## Where did birds hatch
 
 ```{r}
 library(tidyverse)
@@ -41,7 +41,7 @@ bloy_chicks <- tibble(
   arrange(survey, beach)
 ```
 
-**Q1:** Because we set the seed, we will get the same 'random' output 
+**Q1:** Because we set the seed, we will get the same 'random' output
 
 **Q2:** Lines 18-24 take a random sample with 25 repetitions and is done with replacement. This is repeated three times, then only unique values are filtered, and the first 12 band combinations are kept
 
@@ -50,6 +50,7 @@ bloy_chicks <- tibble(
 ## Without a custom function
 
 **Q4:** Sort the pipelines in the correct order
+
 ```{r}
   # Find most frequent beach per bird
 beach_freq <- bloy_chicks %>% 
@@ -100,12 +101,12 @@ bloy_chicks %>%
   group_by(bird) %>% 
   summarize(hatch_beach = find_hatching_beach(beach, survey))
 ```
-  
-**Q5:** I will use beach for site and survey for date 
 
-**Q6:** The hatching beach site for bird YWG is Main and for WYB is Cowell's
-  
-# Bonus 
+**Q5:** I will use beach for site and survey for date
+
+**Q6:** The hatching beach site for bird YWG is Mitchell's and for WYB is Main
+
+# Bonus
 
 ```{r}
 move_report_output <- function(quarto_doc){
