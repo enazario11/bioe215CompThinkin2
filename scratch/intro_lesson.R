@@ -63,8 +63,10 @@ project_setup <- function(){
   writeLines("creates a folder for .Qmd files", 
              "docs/README_docs.md")
   
-  return <- "SUCCESS!"
+  return("SUCCESS!")
 }
 
 #run function
 project_setup()
+
+file.create("scratch/assessment.R")
