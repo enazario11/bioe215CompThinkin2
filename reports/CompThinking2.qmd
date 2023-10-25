@@ -115,4 +115,4 @@ move_report_output <- function(quarto_doc){
 move_report_output("reports/")
 ```
 
-#Might have gotten close but was using reports directory as the input rather than the quarto doc name. Couldn't get this to work but might be on the right track.
+Might have gotten close but was using reports directory as the input rather than the quarto doc name. Couldn't get this to work but might be on the right track.
