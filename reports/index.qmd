@@ -110,11 +110,11 @@ bloy_chicks %>%
 # Bonus
 
 ```{r}
-move_report_output <- function(quarto_doc){
- file.rename(dir(quarto_doc, pattern = ".html"), "docs/index.html") 
-}
+#move_report_output <- function(quarto_doc){
+ #file.rename(dir(quarto_doc, pattern = ".html"), "docs/index.html") 
+#}
 
-move_report_output("reports/")
+#move_report_output("reports/")
 ```
 
 Might have gotten close but was using reports directory as the input rather than the quarto doc name. Couldn't get this to work but might be on the right track.
