@@ -1,7 +1,18 @@
 ---
-title: "CompThinking2"
-format: html
+title: "Locations and dive data exploration"
+author: "Emily Nazario"
+date: "`r Sys.Date()`"
+format:
+ html: 
+  self-contained: true
 editor: visual
+toc: TRUE
+toc-title: "On this page"
+theme: yeti
+fontcolor: "#134f5c"
+execute: 
+  message: false
+  warning: false
 ---
 
 ## Where did birds hatch
