@@ -70,3 +70,11 @@ project_setup <- function(){
 project_setup()
 
 file.create("scratch/assessment.R")
+
+#function to move rendered quarto files to different folder 
+move_report_output <- function(quarto_doc_location){
+  file <- dir(quarto_doc_location, pattern = ".html", full.names = TRUE)
+  file.rename(file, "docs/index.html") 
+}
+
+move_report_output("reports")
