@@ -122,12 +122,12 @@ bloy_chicks %>%
 
 ```{r}
 #function to move rendered quarto files to different folder 
-move_report_output <- function(quarto_doc_location){
-  file <- dir(quarto_doc_location, pattern = ".html", full.names = TRUE)
-  file.rename(file, "docs/index.html") 
-}
+#move_report_output <- function(quarto_doc_location){
+  #file <- dir(quarto_doc_location, pattern = ".html", full.names = TRUE)
+  #file.rename(file, "docs/index.html") 
+#}
 
-move_report_output("reports")
+#move_report_output("reports")
 ```
 
-Got close using the reports directory as the input rather than the quarto doc name. It worked!
+Got close using the reports directory as the input rather than the quarto doc name. It worked! Commented it out because only works once doc is rendered.

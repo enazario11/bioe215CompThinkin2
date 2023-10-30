@@ -3178,13 +3178,15 @@ vertical-align: -.125em;
 <section id="bonus" class="level1">
 <h1>Bonus</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#move_report_output &lt;- function(quarto_doc){</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a> <span class="co">#file.rename(dir(quarto_doc, pattern = &quot;.html&quot;), &quot;docs/index.html&quot;) </span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#}</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#move_report_output(&quot;reports/&quot;)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#function to move rendered quarto files to different folder </span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#move_report_output &lt;- function(quarto_doc_location){</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#file &lt;- dir(quarto_doc_location, pattern = &quot;.html&quot;, full.names = TRUE)</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">#file.rename(file, &quot;docs/index.html&quot;) </span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#}</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#move_report_output(&quot;reports&quot;)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Might have gotten close but was using reports directory as the input rather than the quarto doc name. Couldn’t get this to work but might be on the right track.</p>
+<p>Got close using the reports directory as the input rather than the quarto doc name. It worked! Commented it out because only works once doc is rendered.</p>
 </section>
 
 </main>
